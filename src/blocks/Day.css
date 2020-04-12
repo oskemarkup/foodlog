@@ -1,0 +1,23 @@
+.Day {
+    @apply pt-2;
+}
+
+.Day-Title {
+    @apply flex items-center justify-between;
+}
+
+.Day-TitleLabel {
+    @apply font-medium mr-3;
+}
+
+.Day-TitleSummary {
+    @apply bg-white my-1 rounded-lg px-4 py-1 border text-gray-700;
+}
+
+.Day-Cards {
+    @apply pt-1;
+}
+
+.Day-Cards_hidden {
+    display: none;
+}

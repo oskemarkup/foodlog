@@ -1,0 +1,15 @@
+.AddNewButton {
+    @apply fixed right-0 bottom-0 mr-4 mb-4 w-16 h-16 flex items-center justify-center bg-gray-700 shadow text-white rounded-full;
+    @apply font-bold text-3xl;
+}
+.AddNewButton:hover {
+    @apply bg-blue-700;
+}
+.AddNewButton::after,
+.AddNewButton::before {
+    content: '';
+    @apply absolute bg-white top-half left-half w-1 h-5 transform -translate-x-1/2 -translate-y-1/2;
+}
+.AddNewButton::before {
+    @apply rotate-90;
+}

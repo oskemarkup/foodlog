@@ -1,0 +1,71 @@
+.Card {
+    @apply transition duration-300 ease-in-out bg-white rounded-lg shadow text-gray-800 text-base pt-4 pb-0 px-4 mb-4;
+}
+
+.Card:hover {
+    @apply shadow-lg;
+    transform: translateY(-0.125rem);
+}
+
+.Card-Title {
+    @apply flex pb-4;
+}
+
+.Card-Time {
+    @apply font-medium pr-4 flex items-center border-r mr-3;
+}
+
+.Card-Products {
+    @apply pb-2;
+}
+
+.Card-Product {
+    @apply flex flex-grow justify-between items-center;
+    @apply border-t py-1;
+}
+
+.Card-Product_alt {
+    @apply border-t-0 py-0;
+}
+
+.Card-ProductInfo {
+    @apply my-1;
+}
+
+@media (max-width: 400px) {
+    .Card-Product_alt {
+        @apply flex-col items-start;
+    }
+}
+@media (max-width: 309px) {
+    .Card-Product {
+        @apply flex-col items-start;
+    }
+
+    .Card-ProductInfo {
+        @apply flex-col items-start;
+    }
+}
+
+.Card-ProductInfo2 {
+}
+
+.Card-ProductName {
+    @apply mr-2 inline;
+}
+
+.Card-ProductQuantity {
+    @apply inline-block text-white text-xs leading-tight bg-gray-400 rounded px-2 py-1 mr-2;
+}
+
+.Card-ProductCalorie {
+    @apply text-gray-500 mr-2 text-xs;
+}
+
+.Card-ProductSummary {
+    @apply flex-shrink-0;
+}
+
+.Card-ProductSummary_alt {
+    @apply bg-gray-300 my-1 rounded-lg px-4 py-1;
+}

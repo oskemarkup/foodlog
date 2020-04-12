@@ -1,0 +1,77 @@
+.Form { }
+.Form_loading {
+    @apply relative pointer-events-none;
+}
+.Form_loading::before {
+    content: '';
+    @apply opacity-75 absolute top-0 left-0 right-0 bottom-0 bg-white z-10 rounded-lg;
+}
+.Form-Container {
+    @apply px-6 pt-6;
+}
+.Form-Title {
+    @apply text-2xl font-medium mb-4 leading-tight;
+}
+.Form-Field {
+    @apply block mb-4;
+}
+.Form-Label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+}
+.Form-Line {
+    @apply h-px bg-gray-500 mb-4;
+}
+.Form-B { }
+.Form-A {
+    @apply px-2;
+}
+.Form-C {
+    @apply border p-4 mb-4 bg-gray-100;
+}
+.Form-Add {
+    @apply appearance-none relative block mx-auto;
+}
+.Form-Add::after {
+    content: '';
+    @apply absolute bottom-0 h-0 w-full left-0 border-dashed border-t border-black;
+}
+.Form-Remove {
+    @apply appearance-none relative block mx-auto text-red-600;
+}
+.Form-Remove::after {
+    content: '';
+    @apply absolute bottom-0 h-0 w-full left-0 border-dashed border-t border-red-600;
+}
+.Form-Footer {
+    @apply rounded-b sticky bottom-0 left-0 right-0 bg-gray-200 border-t p-6 flex items-center justify-between;
+}
+.Form-Actions {
+    @apply flex flex-grow justify-end -m-1;
+}
+.Form-Action {
+    @apply m-1 bg-blue-500 text-white font-medium py-2 px-4 rounded;
+}
+.Form-Action_danger {
+    @apply bg-transparent text-red-500 font-normal;
+}
+.Form-Action_secondary {
+    @apply bg-gray-400 text-gray-700;
+}
+.Form-Action:hover {
+    @apply bg-blue-700;
+}
+.Form-Action_danger:hover {
+    @apply bg-gray-400 text-red-600;
+}
+.Form-Action_secondary:hover {
+    @apply bg-gray-500;
+}
+.Form-Action_withSpacing {
+    @apply ml-1;
+}
+.Form-RemoveItem {
+    @apply appearance-none relative block mx-auto text-red-600;
+}
+.Form-Trash {
+    @apply fill-current w-5 h-5;
+}

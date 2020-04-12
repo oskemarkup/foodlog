@@ -1,0 +1,36 @@
+.Header {
+    @apply sticky top-0 flex items-center justify-between flex-wrap bg-white shadow pl-4 z-10;
+}
+.Header-Logo {
+    @apply font-semibold text-xl;
+}
+.Header-Profile {
+    @apply relative;
+}
+.Header-ProfileCard {
+    @apply flex items-center p-4 cursor-pointer;
+}
+.Header-ProfileImage {
+    @apply w-10 h-10 rounded-full object-cover;
+}
+.Header-ProfileArrow {
+    @apply ml-2 fill-current h-4 w-4;
+}
+.Header-ProfileDropdown {
+    @apply border border-gray-400 absolute bg-white rounded-lg shadow-lg m-2 right-0 top-full;
+}
+.Header-ProfileInfo {
+    @apply px-4 py-2;
+}
+.Header-ProfileName {
+    @apply font-medium;
+}
+.Header-ProfileEmail {
+    @apply text-sm leading-tight text-gray-500;
+}
+.Header-ProfileMenu {
+    @apply border-t;
+}
+.Header-ProfileLink {
+    @apply px-4 py-2 block;
+}

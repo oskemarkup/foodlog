@@ -24,7 +24,17 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+      <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+      <script>
+        function init() {
+          gapi.load('auth2', () => {
+            gapi.auth2.init({ client_id: '541301727496-586jhpqk4bsojhr1n4onrtrr8iojv2t7.apps.googleusercontent.com' })
+          });
+        }
+      </script>
+    <title>FoodLog</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
