@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95d35b882bcef013acf4e2ce1619d2a0",
+    "revision": "434d965fc33500a01ab82b811cd40eaf",
     "url": "/foodlog/index.html"
   },
   {
