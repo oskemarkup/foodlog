@@ -1,6 +1,9 @@
 .Card {
     @apply transition duration-300 ease-in-out bg-white rounded-lg shadow text-gray-800 text-base pt-4 pb-0 px-4 mb-4;
 }
+.Card_draft {
+    @apply bg-yellow-200 text-yellow-800;
+}
 
 .Card:hover {
     @apply shadow-lg;
@@ -14,6 +17,9 @@
 .Card-Time {
     @apply font-medium pr-4 flex items-center border-r mr-3;
 }
+.Card_draft .Card-Time {
+    @apply border-yellow-400;
+}
 
 .Card-Products {
     @apply pb-2;
@@ -22,6 +28,9 @@
 .Card-Product {
     @apply flex flex-grow justify-between items-center;
     @apply border-t py-1;
+}
+.Card_draft .Card-Product {
+    @apply border-yellow-400;
 }
 
 .Card-Product_alt {
@@ -57,9 +66,15 @@
 .Card-ProductQuantity {
     @apply inline-block text-white text-xs leading-tight bg-gray-400 rounded px-2 py-1 mr-2;
 }
+.Card_draft .Card-ProductQuantity {
+    @apply bg-yellow-500;
+}
 
 .Card-ProductCalorie {
     @apply text-gray-500 mr-2 text-xs;
+}
+.Card_draft .Card-ProductCalorie {
+    @apply text-yellow-600;
 }
 
 .Card-ProductSummary {
@@ -68,4 +83,7 @@
 
 .Card-ProductSummary_alt {
     @apply bg-gray-300 my-1 rounded-lg px-4 py-1;
+}
+.Card_draft .Card-ProductSummary_alt {
+    @apply bg-yellow-400;
 }

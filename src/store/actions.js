@@ -1,5 +1,4 @@
 import { createAction } from 'redux-actions';
-import tokenStorage from "../utils/token";
 
 const loadMealsRequest = createAction('LOAD_MEALS_REQUEST');
 const loadMealsSuccess = createAction('LOAD_MEALS_SUCCESS');

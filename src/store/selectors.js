@@ -3,7 +3,16 @@ const timeToMinutes = time => {
 
   return hours * 60 + parseInt(minutes);
 };
-const sortByTime = (a, b) => timeToMinutes(b.time) - timeToMinutes(a.time);
+
+const sortByTime = (a, b) => {
+  if (!a.time) {
+    return -1;
+  } else if (!b.time) {
+    return 1;
+  }
+
+  return timeToMinutes(b.time) - timeToMinutes(a.time);
+};
 
 export const getDays = state => [...(new Set(state.meals.map(meal => meal.date)))].sort().reverse();
 export const getMeals = day => state => state.meals.filter(meal => meal.date === day).sort(sortByTime);

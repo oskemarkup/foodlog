@@ -35,7 +35,7 @@ const CardProduct = ({ name, quantity, calorie, amount, design, type }) => (
       </div>
       {calorie && <div className="Card-ProductCalorie">{getLocale(calorie, 'calorie', type)}</div>}
     </div>
-    <div className={`Card-ProductSummary Card-ProductSummary_${design}`}>{amount} ккал</div>
+    {Boolean(amount) && <div className={`Card-ProductSummary Card-ProductSummary_${design}`}>{amount} ккал</div>}
   </div>
 );
 
@@ -46,9 +46,9 @@ const Card = ({ meal, sums }) => {
   const onClick = () => dispatch(openModal(_id));
 
   return (
-    <div className="Card" onClick={onClick}>
+    <div className={`Card${productSums.some(el => !el) ? ' Card_draft' : ''}`} onClick={onClick}>
       <div className="Card-Title">
-        <div className="Card-Time">{time}</div>
+        {Boolean(time) && <div className="Card-Time">{time}</div>}
         <CardProduct
           name={products.length === 1 ? products[0].name : name}
           quantity={products.length === 1 ? products[0].quantity : null}

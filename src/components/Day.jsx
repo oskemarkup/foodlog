@@ -16,7 +16,7 @@ const Day = ({ date }) => {
     <div className="Day">
       <div className="Day-Title" onClick={toggleDay}>
         <div className="Day-TitleLabel">{moment(date).format('DD MMMM YYYY')}</div>
-        <div className="Day-TitleSummary">{daySum} ккал</div>
+        {Boolean(daySum) && <div className="Day-TitleSummary">{daySum} ккал</div>}
       </div>
       <div className={`Day-Cards${active ? '' : ' Day-Cards_hidden'}`}>
         {meals.map((meal, index) => (
