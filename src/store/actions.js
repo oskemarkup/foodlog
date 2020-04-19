@@ -1,4 +1,5 @@
 import { createAction } from 'redux-actions';
+import tokenStorage from "../utils/token";
 
 const loadMealsRequest = createAction('LOAD_MEALS_REQUEST');
 const loadMealsSuccess = createAction('LOAD_MEALS_SUCCESS');
@@ -23,9 +24,10 @@ export const loadMeals = () => (dispatch, getState, tokenStorage) => {
   dispatch(loadMealsRequest());
     fetch(`${process.env.REACT_APP_BACKEND_URL}/read?id_token=${tokenStorage.getToken}`)
       .then(response => response.ok ? response.json() : dispatch(loadMealsFailure()))
-      .then(({ err, user, data }) => {
-        if (err) {
-          return console.log(err);
+      .then(({ error, user, data }) => {
+        if (error) {
+          tokenStorage.clearToken();
+          return dispatch(logout());
         }
         dispatch(loadMealsSuccess(data));
         dispatch(setUserData(user));
