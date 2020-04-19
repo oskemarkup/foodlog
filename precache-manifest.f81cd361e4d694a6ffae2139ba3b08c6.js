@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ab159e24abe9d46dc4a5ae6d049e3bf",
+    "revision": "9223641f272db04d730f64dbce416b2e",
     "url": "/foodlog/index.html"
   },
   {
-    "revision": "7f473a0f2f001a54ce20",
-    "url": "/foodlog/static/css/main.41daa917.chunk.css"
+    "revision": "04a7330f332b92658ebc",
+    "url": "/foodlog/static/css/main.78bd3cec.chunk.css"
   },
   {
     "revision": "4dd00be2397f04a339da",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/foodlog/static/js/2.0888eacd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7f473a0f2f001a54ce20",
-    "url": "/foodlog/static/js/main.3a7f838e.chunk.js"
+    "revision": "04a7330f332b92658ebc",
+    "url": "/foodlog/static/js/main.c61a0bb8.chunk.js"
   },
   {
     "revision": "2a82fe8d4ef04bac98ce",
